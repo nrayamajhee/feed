@@ -6,15 +6,15 @@
 cacheUrl: https://nrayamajhee.github.io/my-feeds/cache.json
 sources:
   - href: http://www.vox.com/rss/index.xml
-  - href: http://www.theverge.com/rss/index.xml
-  - href: http://feeds.feedburner.com/d0od
-  - href: http://www.commitstrip.com/en/feed
-  - href: https://phdcomics.com/gradfeed.php
-  - href: http://feeds.feedburner.com/codinghorror
-  - href: https://www.phoronix.com/rss.php
-  - href: https://www.wired.com/feed
-  - href: http://feeds.arstechnica.com/arstechnica/index
-  - href: http://xkcd.com/rss.xml
-  - href: http://www.threewordphrase.com/rss.xml
-  - href: http://what-if.xkcd.com/feed.atom
-  - href: https://theoatmeal.com/feed/rss
+   - href: http://www.theverge.com/rss/index.xml
+   - href: http://feeds.feedburner.com/d0od
+#   - href: http://www.commitstrip.com/en/feed
+#   - href: https://phdcomics.com/gradfeed.php
+#   - href: http://feeds.feedburner.com/codinghorror
+   - href: https://www.phoronix.com/rss.php
+   - href: https://www.wired.com/feed
+   - href: http://feeds.arstechnica.com/arstechnica/index
+#   - href: http://xkcd.com/rss.xml
+#   - href: http://www.threewordphrase.com/rss.xml
+#   - href: http://what-if.xkcd.com/feed.atom
+#   - href: https://theoatmeal.com/feed/rss

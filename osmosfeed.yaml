@@ -15,6 +15,6 @@ sources:
   - href: http://what-if.xkcd.com/feed.atom
   - href: http://feeds.arstechnica.com/arstechnica/index
   - href: http://www.commitstrip.com/en/feed
-  - href: https://phdcomics.com/gradfeed.php
+#   - href: https://phdcomics.com/gradfeed.php
 #   - href: https://theoatmeal.com/feed/rss
 #   - href: http://www.threewordphrase.com/rss.xml

@@ -16,6 +16,6 @@ sources:
   - href: http://feeds.arstechnica.com/arstechnica/index
   - href: https://phdcomics.com/gradfeed.php
   - href: https://theoatmeal.com/feed/rss
-  - href: http://www.threewordphrase.com/rss.xml
+#   - href: http://www.threewordphrase.com/rss.xml
 #   - href: http://www.commitstrip.com/en/feed
 

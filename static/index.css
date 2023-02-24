@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+:root {
+  --bg: #111;
+  --bg-1: #222;
+  --bg-2: #333;
+  --fg-2: #aaa;
+  --fg-1: #ccc;
+  --fg: #eee;
+  --gap-xs: 5px;
+  --gap-sm: 10px;
+  --gap: 20px;
+  --gap-md: 30px;
+  --gap-lg: 40px;
+}
+
+p,
+h2,
+h3,
+body {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.subheading {
+  font-size: 0.7rem;
+  color: var(--fg-2);
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+body {
+  padding: var(--gap) 0;
+  background: var(--bg);
+  font: 16px/1.5 Inter, sans-serif;
+  color: var(--fg);
+  postion: relative;
+}
+
+header {
+  font-size: 0.6rem;
+  line-height: 1;
+  display: flex;
+  justify-content: end;
+  color: var(--fg-1);
+  position: absolute;
+  top: var(--gap-xs);
+  right: var(--gap-xs);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.details {
+  font-size: 0.8rem;
+  max-height: calc(6em * 1.5);
+  overflow: hidden;
+}
+
+section.closed .details,
+section.closed .image {
+  display: none;
+}
+
+section.closed article {
+  padding: var(--gap-xs) var(--gap-sm);
+}
+
+section.closed .subheading {
+  margin: 0;
+}
+
+section > .articles {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+section.closed > .articles {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.image > img,
+.image > div {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 0.5rem;
+}
+
+.image img {
+  display: block;
+  object-fit: cover;
+}
+
+.image > div {
+  background: var(--bg-2);
+}
+
+.image @media (max-width: 1280px) {
+  section {
+    width: 960px;
+  }
+  section > .articles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 960px) {
+  section {
+    width: 640px;
+  }
+  section > .articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  section {
+    width: 100%;
+  }
+  section > .articles {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+section > time {
+  cursor: pointer;
+  user-select: none;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+article {
+  padding: var(--gap);
+  border-radius: var(--gap-sm);
+  background-color: var(--bg-1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--fg-1);
+}
+
+a:hover {
+  color: var(--fg);
+}
+
+aside {
+}

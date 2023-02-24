@@ -3,6 +3,7 @@
 # https://github.com/osmoscraft/osmosfeed/blob/master/docs/osmosfeed-yaml-reference.md
 #########################
 
+siteTitle: Nishan's RSS Feed Subscriptions
 cacheUrl: https://nrayamajhee.github.io/my-feeds/cache.json
 sources:
   - href: http://www.vox.com/rss/index.xml
@@ -16,6 +17,6 @@ sources:
   - href: http://feeds.arstechnica.com/arstechnica/index
   - href: https://phdcomics.com/gradfeed.php
   - href: https://theoatmeal.com/feed/rss
+  - href: https://css-tricks.com/feed/
 #   - href: http://www.threewordphrase.com/rss.xml
 #   - href: http://www.commitstrip.com/en/feed
-

@@ -1,0 +1,79 @@
+<html lang="en">
+
+  <head>
+    <title>{{siteTitle}}</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://nishan.rayamajhee.com/img/icon.png"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{siteTitle}}"
+      href="{{feedHref}}"
+    />
+    <link href="index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <p>built on <time>{{siteBuildTimestamp}}</time></p>
+    </header>
+
+    <!--
+    <aside>
+      <ul>
+        <li>All posts</li>
+        {{#each sources}}
+          <li onclick="groupBySource" class="sourceUrl">{{siteUrl}}</li>
+        {{/each}}
+      </ul>
+    </aside>
+    -->
+    <main>
+      <div class="days">
+        {{#each dates}}
+          <section>
+            <time>{{isoUtcPublishTime}}</time>
+            <div class="articles">
+              {{#each articles}}
+                <article>
+                  <div class="image">
+                    {{#if imageUrl}}
+                      <img src="{{imageUrl}}" width="100" />
+                    {{else}}
+                      <div></div>
+                    {{/if}}
+                  </div>
+                  <h2>
+                    <a href={{link}}>
+                      {{title}}
+                    </a>
+                  </h2>
+                  <div class="subheading">
+                    <h3>
+                      <a
+                        class="sourceUrl"
+                        href={{source.siteUrl}}
+                      >{{source.siteUrl}}</a>
+                    </h3>
+                    <p>{{readingTimeInMin}}
+                      min</p>
+                  </div>
+                  <p class="details">{{description}}</p>
+                </article>
+              {{/each}}
+            </div>
+          </section>
+        {{/each}}
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+
+</html>

@@ -4,7 +4,6 @@
 #########################
 
 siteTitle: Nishan's RSS Feed Subscriptions
-cacheUrl: https://nishan.rayamajhee.com/feed/cache.json
 sources:
   - href: http://www.vox.com/rss/index.xml
   - href: http://www.theverge.com/rss/index.xml

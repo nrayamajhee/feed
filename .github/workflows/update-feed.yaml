@@ -38,3 +38,9 @@ jobs:
         - name: Deploy to GitHub Pages
           id: deployment
           uses: actions/deploy-pages@v1
+        - uses: gautamkrishnar/keepalive-workflow@v1
+          with:
+            commit_message: Keep actions alive
+            committer_username: nrayamajhee
+            committer_email: nishan@rayamajhee.com
+            

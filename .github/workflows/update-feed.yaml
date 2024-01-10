@@ -13,18 +13,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: "16"
-      - name: Install dependencies
-        run: npm install
-      - name: Build the feed
-        run: npm run build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+          node-version: "20"
+      - run: npm install
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v1
         with:
           path: ./public
+      - uses: gautamkrishnar/keepalive-workflow@v1
+        with:
+          commit_message: Keep actions alive
+          committer_username: nrayamajhee
+          committer_email: nishan@rayamajhee.com
   deploy:
       needs: build
       permissions:
@@ -38,9 +39,4 @@ jobs:
         - name: Deploy to GitHub Pages
           id: deployment
           uses: actions/deploy-pages@v1
-        - uses: gautamkrishnar/keepalive-workflow@v1
-          with:
-            commit_message: Keep actions alive
-            committer_username: nrayamajhee
-            committer_email: nishan@rayamajhee.com
             
